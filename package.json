@@ -4,7 +4,8 @@
   "description": "node.js app that beeps when a new BCH block is mined",
   "main": "bch-new-block-beep.js",
   "scripts": {
-    "test": "echo write tests"
+    "test": "echo write tests",
+    "start": "node bch-new-block-beep.js"
   },
   "repository": {
     "type": "git",
@@ -23,5 +24,8 @@
   "bugs": {
     "url": "https://github.com/christroutner/bch-new-block-beep/issues"
   },
-  "homepage": "https://github.com/christroutner/bch-new-block-beep#readme"
+  "homepage": "https://github.com/christroutner/bch-new-block-beep#readme",
+  "dependencies": {
+    "@psf/bch-js": "6.4.5"
+  }
 }
