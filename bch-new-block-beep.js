@@ -12,18 +12,22 @@ async function beepOnNewBlock() {
     console.log('Current block: ', currentBlock)
 
     setInterval(async function() {
-      const now = new Date()
-      console.log(`${now.toLocaleString()} Checking for new block...`)
+      try {
+        const now = new Date()
+        console.log(`${now.toLocaleString()} Checking for new block...`)
 
-      const blockNow = await bchjs.Blockchain.getBlockCount()
+        const blockNow = await bchjs.Blockchain.getBlockCount()
 
-      if(blockNow !== currentBlock) {
-        console.log(`New block found: ${blockNow}`)
+        if(blockNow !== currentBlock) {
+          console.log(`New block found: ${blockNow}`)
 
-        // Make beep sound.
-        console.log('\u0007')
+          // Make beep sound.
+          console.log('\u0007')
 
-        currentBlock = blockNow
+          currentBlock = blockNow
+        }
+      } catch(err) {
+        console.error('Error inside interval function: ', err)
       }
     }, 60000)
   } catch(err) {
