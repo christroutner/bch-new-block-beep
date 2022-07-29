@@ -1,0 +1,27 @@
+{
+  "name": "bch-new-block-beep",
+  "version": "1.0.0",
+  "description": "node.js app that beeps when a new BCH block is mined",
+  "main": "bch-new-block-beep.js",
+  "scripts": {
+    "test": "echo write tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/christroutner/bch-new-block-beep.git"
+  },
+  "keywords": [
+    "node.js",
+    "javascript",
+    "bch",
+    "bitcoin",
+    "bitcoin",
+    "cash"
+  ],
+  "author": "Chris Troutner <chris.troutner@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/christroutner/bch-new-block-beep/issues"
+  },
+  "homepage": "https://github.com/christroutner/bch-new-block-beep#readme"
+}
